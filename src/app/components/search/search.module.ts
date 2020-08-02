@@ -1,10 +1,9 @@
 import { PriceFilter } from '../../pipes/priceFilter.pipe';
-import { PreviousDateDirective } from './../../directives/previous-date.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search.component';
 import { DataService } from './../services/data.service';
-import { SearchResultCardComponent } from './content/search-result-card/search-result-card.component';
+import { SearchResultCardComponent } from './search-result-card/search-result-card.component';
 import { FlightSearchByPriceComponent } from './sidebar/flight-search-by-price/flight-search-by-price.component';
 import { FlightSearchPanelComponent } from './sidebar/flight-search-panel/flight-search-panel.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +26,6 @@ import { Ng5SliderModule } from 'ng5-slider';
         FlightSearchPanelComponent,
         FlightSearchByPriceComponent,
         SearchResultCardComponent,
-        PreviousDateDirective,
         PriceFilter
     ],
     providers: [DataService]

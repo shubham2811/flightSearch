@@ -1,6 +1,6 @@
 import { DataService } from './../services/data.service';
 import { Component, ViewChild, AfterViewChecked, AfterViewInit, OnInit } from '@angular/core';
-import { SearchResultCardComponent } from './content/search-result-card/search-result-card.component';
+import { SearchResultCardComponent } from './search-result-card/search-result-card.component';
 
 @Component({
     selector: 'app-search',
