@@ -1,0 +1,113 @@
+.flight-results-wrapper {
+  padding: 0.625em;
+}
+
+.flight-card {
+  padding: 1em;
+  margin-bottom: 0.625em;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  overflow: hidden;
+}
+
+.details-wrapper {
+  max-width: 80%;
+}
+
+.image-wrapper {
+  max-width: 20%;
+  text-align: center;
+}
+
+.to-flight,
+.from-flight {
+  max-width: 50%;
+  line-height: 1.4;
+}
+
+.flight-card h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+
+.flight-card .fl-route,
+.flight-card .fl-timings {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #585151;
+}
+
+.fl-timings span {
+  color: #a59494;
+}
+
+.image-wrapper button {
+  width: 100%;
+}
+
+img {
+  width: 60%;
+}
+
+.journey {
+  background: #00b9f5;
+  line-height: 2.6em;
+}
+
+.journey-detail>span {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.journey-dates {
+  float: right;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #000;
+}
+
+.no-card-content {
+  text-align: center;
+  line-height: 2;
+  margin-top: 3.25em;
+  color: #00b9f5;
+  font-weight: 400;
+}
+.no-card-content h2{
+  font-weight: 700;
+}
+
+.no-result {
+  transform: translate(0%, 50%);
+  line-height: 1.6em;
+  font-size: 1.2em;
+  color: #00b9f5;
+}
+
+@media screen and (max-width: 768px) {
+  .details-wrapper {
+    max-width: 75%;
+  }
+  .image-wrapper {
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .details-wrapper,
+  .image-wrapper {
+    max-width: 50%;
+    vertical-align: middle;
+  }
+  .to-flight,
+  .from-flight {
+    max-width: 100%;
+    margin-bottom: 0.625em;
+  }
+}

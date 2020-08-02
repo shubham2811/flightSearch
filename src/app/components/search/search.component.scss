@@ -1,0 +1,32 @@
+.app-container {
+  width: 100%;
+  margin: 0 auto; // border: 1px solid #000;
+}
+
+.search-container {
+  display: inline-block;
+  max-width: 25%;
+  width: 100%; // border-right: 2px solid #000;
+  height: calc(100% - 60px);
+  vertical-align: top;
+}
+
+.result-container {
+  display: inline-block;
+  max-width: 75%;
+  width: 100%;
+  height: calc(100% - 60px);
+  vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container,
+  .result-container {
+    max-width: 100%;
+    border: 0;
+    height: auto;
+  }
+  .search-container {
+    border-bottom: 5px solid #ccc;
+  }
+}

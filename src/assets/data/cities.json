@@ -1,0 +1,24 @@
+{
+  "cities": [{
+
+      "code": "BOM",
+      "name": "Mumbai"
+    },
+    {
+
+      "code": "DEL",
+      "name": "Delhi"
+    },
+    {
+
+      "code": "HYD",
+      "name": "Hyderabad"
+
+    },
+    {
+      "code": "PNQ",
+      "name": "Pune"
+    }
+
+  ]
+}

@@ -1,0 +1,98 @@
+<div class="flight-results-wrapper fadeIn">
+  <div *ngIf="flights; then cards; else noCards"></div>
+  <ng-template #cards>
+    <div *ngIf="flights[0]; then journeyDetails; else noResult"></div>
+
+    <ng-template #journeyDetails>
+      <div class="flight-card journey fadeIn">
+        <span class="journey-detail">
+          <span>{{ flights[0].source }}>{{ flights[0].dest }}</span>
+          <span *ngIf="flights.twoWaySearch">>{{ flights[0].source }}</span>
+        </span>
+        <span class="journey-dates">
+          <span>Journey Date : {{ flights[0].date }}</span>
+          <br />
+          <span *ngIf="flights.twoWaySearch"
+            >Return Date : {{ flights[0].round_trip_date }}
+          </span>
+        </span>
+      </div>
+    </ng-template>
+
+    <ng-template #noResult>
+      <div class=" no-result fadeIn">
+        <p>
+          We're sorry ! No Flight found !
+          <br />
+          Please refine your search !
+        </p>
+        <h2>For One way: 24 and 25 July 2019</h2>
+        <h2>
+          For Two way: Start date: 24 July 2019 and Return Date: 25 July 2019
+        </h2>
+        <h2>Data is mostly created for flights from PNQ to DEL</h2>
+      </div>
+    </ng-template>
+
+    <div>
+      <div
+        class="flight-card"
+        *ngFor="let flight of flights | filterByPrice: priceFilter"
+      >
+        <div class="side-by-side details-wrapper fadeIn">
+          <h3 class="fl-fare">Rs.{{ flight.fare }}</h3>
+          <div class="side-by-side to-flight">
+            <span class="fl-name">{{ flight.flightNo }}</span>
+
+            <!-- <pre>{{flight | json}}</pre> -->
+            <p class="fl-route">{{ flight.source }} > {{ flight.dest }}</p>
+            <p class="fl-timings">
+              <span>Depart: </span>{{ flight.time.depart }}
+            </p>
+            <p class="fl-timings">
+              <span>Arrive: </span>{{ flight.time.arrive }}
+            </p>
+          </div>
+
+          <div class="side-by-side from-flight" *ngIf="flights.twoWaySearch">
+            <span class="fl-name">{{ flight.flightNo }}</span>
+            <p class="fl-timings">{{ flight.dest }} > {{ flight.source }}</p>
+            <p class="fl-timings">
+              <span>Depart: </span>{{ flight.round_trip.depart }}
+            </p>
+            <p class="fl-timings">
+              <span>Arrive: </span>{{ flight.round_trip.arrive }}
+            </p>
+          </div>
+        </div>
+        <div class="side-by-side image-wrapper fadeIn">
+          <img [src]="flight.imgUrl" />
+          <button class=" btn-primary std" (click)="showBookingDetails(flight)">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #noCards>
+    <div class="no-card-wrapper fadeIn">
+      <div class="no-card-content ">
+        <h2>Welcome !</h2>
+        <p>Please use search side bar for the customized search.</p>
+        <p>Under Round Trip tab you can search for Round Trips.</p>
+        <p>Please use Filter by Price range slider to refine your search.</p>
+        <p>As I've created a directive to disable previous dates,</p>
+        <p>
+          So for Convenience please use below dates to test this application:
+        </p>
+        <hr />
+        <h2>For One way: 24 and 25 July 2019</h2>
+        <h2>
+          For Two way: Start date: 24 July 2019 and Return Date: 25 July 2019
+        </h2>
+        <h2>Data is mostly created for flights from PNQ to DEL</h2>
+      </div>
+    </div>
+  </ng-template>
+</div>

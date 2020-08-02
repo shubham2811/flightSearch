@@ -1,0 +1,827 @@
+[
+  {
+    "flightNo": "EM-P-D-201",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "2500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "08:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "07:00 AM",
+      "arrive": "10:30 PM",
+      "number": "EM-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "ML-P-D-202",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "5000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "06:00 AM",
+      "arrive": "11:30 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "06:00 AM",
+      "arrive": "10:45 AM",
+      "number": "ML-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "ML-P-D-2066",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "8700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:35 AM",
+      "arrive": "10:10 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "06:00 AM",
+      "arrive": "10:45 AM",
+      "number": "ML-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "JT-P-D-203",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "7500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:45 AM",
+      "arrive": "11:10 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "02:00 AM",
+      "arrive": "03:30 AM",
+      "number": "JT-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/jet.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-201",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "2500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "08:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "07:00 AM",
+      "arrive": "10:30 PM",
+      "number": "EM-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "ML-P-D-202",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "5000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "06:00 AM",
+      "arrive": "11:30 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "06:00 AM",
+      "arrive": "10:45 AM",
+      "number": "ML-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "ML-P-D-2066",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "8700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:35 AM",
+      "arrive": "10:10 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "06:00 AM",
+      "arrive": "10:45 AM",
+      "number": "ML-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "JT-P-D-203",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "7500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:45 AM",
+      "arrive": "11:10 AM"
+    },
+    "round_trip_date": "2019-07-25",
+    "round_trip": {
+      "depart": "02:00 AM",
+      "arrive": "03:30 AM",
+      "number": "JT-D-P-201"
+    },
+    "imgUrl": "../assets/img/airlines/jet.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-204",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "8700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "06:00 PM",
+      "arrive": "09:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "9500.00",
+    "date": "2019-07-26",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "6200.00",
+    "date": "2019-07-27",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "8200.00",
+    "date": "2019-07-26",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "3800.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "9000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "PNQ",
+    "source_name": "Pune",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "5700.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "EM-D-P-101",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "2400.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "01:30 AM",
+      "arrive": "05:40 AM"
+    },
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AI-D-P-102",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "4300.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "06:00 PM",
+      "arrive": "10:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "GO-D-P-103",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "9700.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "08:20 PM",
+      "arrive": "11:50 PM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-D-P-104",
+    "source": "DEL",
+    "source_name": "Delhi",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "4900.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:34 AM",
+      "arrive": "09:37 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "9500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "6200.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "8200.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "3800.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "9000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "5700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "9500.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "6200.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "8200.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "3800.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "9000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "5700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "9500.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "6200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "8200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "3800.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "9000.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "HYD",
+    "dest_name": "Hyderabad",
+    "fare": "5700.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "9500.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "6200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "8200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "3800.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "9000.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "HYD",
+    "source_name": "Hyderabad",
+    "dest": "BOM",
+    "dest_name": "Mumbai",
+    "fare": "5700.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "9500.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "6200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "8200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "3800.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "9000.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "PNQ",
+    "dest_name": "Pune",
+    "fare": "5700.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  },
+  {
+    "flightNo": "AA-P-D-204",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "9500.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "11:30 PM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "GO-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "6200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "07:00 PM",
+      "arrive": "10:56 AM"
+    },
+    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  },
+  {
+    "flightNo": "ML-P-D-205",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "8200.00",
+    "date": "2019-07-25",
+    "time": {
+      "depart": "09:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/malaysia.png"
+  },
+  {
+    "flightNo": "AI-P-D-206",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "3800.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "01:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  },
+  {
+    "flightNo": "AA-P-D-207",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "9000.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "02:00 AM",
+      "arrive": "10:30 AM"
+    },
+    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  },
+  {
+    "flightNo": "EM-P-D-208",
+    "source": "BOM",
+    "source_name": "Mumbai",
+    "dest": "DEL",
+    "dest_name": "Delhi",
+    "fare": "5700.00",
+    "date": "2019-07-24",
+    "time": {
+      "depart": "04:00 AM",
+      "arrive": "12:30 AM"
+    },
+
+    "imgUrl": "../assets/img/airlines/emirates.png"
+  }
+]
