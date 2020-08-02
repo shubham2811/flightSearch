@@ -86,9 +86,9 @@ export class DataService {
 
   }
 
-  filterByPrice(val) {
+  filterByPrice(rangeObj) {
     // emitting priceFilter event for SearchResultCardComponent so as to re-use this value in Pipe
-    this.priceFilterEvent.emit(val);
+    this.priceFilterEvent.emit(rangeObj);
   }
 
   getCities() {

@@ -63,7 +63,7 @@ img {
   text-align: center;
   line-height: 2;
   margin-top: 3.25em;
-  color: #00b9f5;
+  color: linear-gradient(to right, #2F80ED, #56CCF2);
   font-weight: 400;
 }
 .no-card-content h2 {

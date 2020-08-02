@@ -11,13 +11,15 @@ import { HeaderComponent } from './header/header.component';
 import { SearchRoutingModule } from './search-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Ng5SliderModule } from 'ng5-slider';
 
 @NgModule({
     imports: [
         CommonModule,
         SearchRoutingModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        Ng5SliderModule
     ],
     declarations: [
         SearchComponent,
