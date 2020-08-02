@@ -1,7 +1,7 @@
 /* Add a black background color to the header */
 
 .header {
-  background-color: #012b72;
+  background:linear-gradient(to right, #2F80ED, #56CCF2);
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }

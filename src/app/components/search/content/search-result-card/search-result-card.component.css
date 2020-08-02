@@ -74,7 +74,7 @@ img {
   transform: translate(0%, 50%);
   line-height: 1.6em;
   font-size: 1.2em;
-  color: #00b9f5;
+  color: linear-gradient(to right, #2F80ED, #56CCF2);
 }
 
 @media screen and (max-width: 768px) {

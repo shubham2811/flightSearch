@@ -34,13 +34,14 @@ button.std {
   color: #fff;
   cursor: pointer;
   font-size: 1em;
-  background: #CFD8DC;
+  background:  #ef6614;
+
   padding: 0.3125em 0.625em;
 }
 
 button.btn-primary {
   min-width: 7em;
-  background-color: #00b9f5;
+  background-color: linear-gradient(to right, #2F80ED, #56CCF2);
   cursor: pointer;
   height: 36px;
   line-height: 36px;

@@ -9,14 +9,13 @@ import { Cities } from '../../../../models/cities';
 export class FlightSearchPanelComponent {
   // view child to get hold of form for resetting it on tab change
   @ViewChild('form') form: any;
- model: any = {};
- searchBoxFlag = false;
+  model: any = {};
+  searchBoxFlag = false;
   cities: object;
 
   constructor(private dataServ: DataService) {
     // service call to get all cities
     this.dataServ.getCities().subscribe((data: Cities) => {
-
       this.cities = data.cities;
     });
   }
@@ -24,14 +23,14 @@ export class FlightSearchPanelComponent {
   searchFlight(formVal) {
     // service call for flight search for given search parameters
     const obj = {
-      destination  : "Mumbai (BOM)",
-      origin : "Delhi (DEL)",
-passengers: 1,
-startDate: "2020-11-02",
-returnDate: "2020-11-02"
-    }
+      destination: 'Mumbai (BOM)',
+      origin: 'Delhi (DEL)',
+      passengers: 1,
+      startDate: '2020-11-02',
+      returnDate: '2020-11-02',
+    };
 
-    console.log('formVal',formVal)
+    console.log('formVal', formVal);
     this.dataServ.flightSearch(obj);
   }
 
