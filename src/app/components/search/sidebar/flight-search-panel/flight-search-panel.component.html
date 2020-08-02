@@ -14,15 +14,15 @@
           </div>
         </div>
         <div class="f-ctrl side-by-side">
-          <input placeholder="Going To" name="dest" type="text" [(ngModel)]="model.dest" #dest="ngModel" class="jr-dest" list="citylist"
+          <input placeholder="Going To" name="destination" type="text" [(ngModel)]="model.destination" #destination="ngModel" class="jr-destination" list="citylist"
             required/>
-          <div class="err-text" *ngIf="dest.errors?.required && dest.touched">
+          <div class="err-text" *ngIf="destination.errors?.required && destination.touched">
            Please provide Destination
           </div>
         </div>
 
         <div class="f-ctrl side-by-side">
-          <input type="date" name="startDate" id="oJrDate" [(ngModel)]="model.startDate" #startDate="ngModel" required 
+          <input type="date" name="startDate"  id="oJrDate" [(ngModel)]="model.startDate" #startDate="ngModel" required 
           />
           <div class="err-text" *ngIf="startDate.errors?.required && startDate.touched">
             Please Enter Start Date

@@ -38,8 +38,8 @@ export class DataService {
     /* check if data is present in session then emit it for components to reuse,
     if not then call getAllFlight API to fetch data from JSON
     */
+   console.log('form',formVal)
     const allFlights = JSON.parse(sessionStorage.getItem('allFlights'));
-
     allFlights ?
       this.emitDataForComponents(this.filterFlights(allFlights, formVal)) :
       this.getAllFlights(formVal);
@@ -66,19 +66,20 @@ export class DataService {
     if (formVal.returnDate) {
 
       this.twoWaySearch = true;
-
       return allFlights.filter((flight) => {
         return flight.date === formVal.startDate &&
           flight.round_trip_date === formVal.returnDate &&
-          flight.dest === formVal.dest &&
-          flight.source === formVal.origin;
+          flight.destination === formVal.destination &&
+          flight.origin === formVal.origin;
       });
 
     } else {
       this.twoWaySearch = false;
       return allFlights.filter((flight) => {
-        return flight.source === formVal.origin &&
-          flight.dest === formVal.dest &&
+        console.log(flight.date);
+        console.log(formVal.startDate)
+        return flight.origin === formVal.origin &&
+          flight.destination === formVal.destination &&
           flight.date === formVal.startDate;
       });
     }

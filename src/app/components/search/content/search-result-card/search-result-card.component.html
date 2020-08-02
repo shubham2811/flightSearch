@@ -6,12 +6,12 @@
     <ng-template #journeyDetails>
       <div class="flight-card journey fadeIn">
         <span class="journey-detail">
-          <span>{{ flights[0].source }}>{{ flights[0].dest }}</span>
-          <span *ngIf="flights.twoWaySearch">>{{ flights[0].source }}</span>
+          <span>{{ flights[0].origin }}>{{ flights[0].destination }}</span>
+          <span *ngIf="flights.twoWaySearch">>{{ flights[0].origin }}</span>
         </span>
         <br />
         <span class="journey-dates">
-          <span>{{flights.length}} flights found </span>,
+          <span>{{ flights.length }} flights found </span>,
           <span>{{ flights[0].date }}</span>
           <br />
           <span *ngIf="flights.twoWaySearch"
@@ -22,7 +22,7 @@
     </ng-template>
 
     <ng-template #noResult>
-      <div class=" no-result fadeIn">
+      <div class="no-result fadeIn">
         <p>
           We're sorry ! No Flight found !
           <br />
@@ -36,53 +36,108 @@
       </div>
     </ng-template>
 
-    <div>
+    <div
+      class="flight-card"
+      *ngFor="let flight of flights | filterByPrice: priceFilter"
+    >
       <div
-        class="flight-card"
-        *ngFor="let flight of flights | filterByPrice: priceFilter"
+        *ngIf="!(flight.layoverFlights && flight.layoverFlights.length)"
+        class="item image-wrapper fadeIn"
       >
-        <div class="side-by-side details-wrapper fadeIn">
-          <div class="side-by-side image-wrapper fadeIn">
-            <img [src]="flight.imgUrl" />
-            
-          </div>
-          <h3 class="fl-fare">Rs.{{ flight.fare }}</h3>
-          <div class="side-by-side to-flight">
-            <span class="fl-name">{{ flight.flightNo }}</span>
+        <img [src]="flight.imgUrl" />
+      </div>
+      <p
+        *ngIf="flight.layoverFlights && flight.layoverFlights.length"
+        class="item"
+      >
+        <span>Multiple</span>
+      </p>
+      <p class="item">
+        <span>Rs.{{ flight.price }}</span>
+      </p>
+      <p class="item">
+        <span *ngIf="flight.flightNo"> {{ flight.flightNo }}</span>
+        <span *ngIf="!flight.flightNo">
+          <a
+            *ngIf="!showMultipleView"
+            [routerLink]=""
+            (click)="toggleMultipleView(showMultipleView)"
+            >Show Details</a
+          >
+          <a
+            *ngIf="showMultipleView"
+            [routerLink]=""
+            (click)="toggleMultipleView(showMultipleView)"
+            >Hide Details</a
+          >
+        </span>
+      </p>
+      <p class="item">
+        <span>{{ flight.origin }}</span>
+        <br />
+        {{ flight.departureTime }}
+      </p>
+      <p class="item">
+        <span> {{ flight.destination }}</span>
+        <br />
+        {{ flight.arrivalTime }}
+      </p>
+      <div class="item-wide image-wrapper fadeIn">
+        <button class="btn-primary std">
+          Book Now
+        </button>
+      </div>
 
-            <!-- <pre>{{flight | json}}</pre> -->
-            <p class="fl-route">{{ flight.source }} > {{ flight.dest }}</p>
-            <p class="fl-timings">
-              <span>Depart: </span>{{ flight.time.depart }}
-            </p>
-            <p class="fl-timings">
-              <span>Arrive: </span>{{ flight.time.arrive }}
-            </p>
+      <div class="item" *ngIf="showMultipleView">
+        <div
+          class="break bg-grey"
+          *ngFor="let layover of flight.layoverFlights"
+        >
+          <div class="item image-wrapper fadeIn">
+            <img [src]="layover.imgUrl" />
           </div>
-
-          <div class="side-by-side from-flight" *ngIf="flights.twoWaySearch">
-            <span class="fl-name">{{ flight.flightNo }}</span>
-            <p class="fl-timings">{{ flight.dest }} > {{ flight.source }}</p>
-            <p class="fl-timings">
-              <span>Depart: </span>{{ flight.round_trip.depart }}
-            </p>
-            <p class="fl-timings">
-              <span>Arrive: </span>{{ flight.round_trip.arrive }}
-            </p>
-          </div>
+          <p>
+            <span>{{ layover.flightNo }}</span>
+          </p>
+          <p>
+            <span> {{ layover.origin }}</span>
+            <br />
+            {{ layover.arrivalTime }}
+          </p>
+          <p>
+            <span>{{ layover.destination }}</span>
+            <br />
+            {{ layover.departureTime }}
+          </p>
         </div>
-        <div class="side-by-side image-wrapper fadeIn">
-          <button class=" btn-primary std">
-            Book Now
-          </button>
+      </div>
+      <div class="break" *ngIf="flights.twoWaySearch">
+        <div class="item image-wrapper fadeIn">
+          <img [src]="flight.imgUrl" />
         </div>
+        <p>
+          <span>Rs.{{ flight.price }}</span>
+        </p>
+        <p>
+          <span>{{ flight.flightNo }}</span>
+        </p>
+        <p>
+          <span>{{ flight.destination }}</span>
+          <br />
+          {{ flight.departureTime }}
+        </p>
+        <p>
+          <span> {{ flight.origin }}</span>
+          <br />
+          {{ flight.arrivalTime }}
+        </p>
       </div>
     </div>
   </ng-template>
 
   <ng-template #noCards>
     <div class="no-card-wrapper fadeIn">
-      <div class="no-card-content ">
+      <div class="no-card-content">
         <h2>Welcome !</h2>
         <p>Please use search side bar for the customized search.</p>
         <p>Under Round Trip tab you can search for Round Trips.</p>

@@ -1,22 +1,22 @@
 {
   "cities": [{
 
-      "code": "BOM",
+      "code": "Mumbai (BOM)",
       "name": "Mumbai"
     },
     {
 
-      "code": "DEL",
+      "code": "Delhi (DEL)",
       "name": "Delhi"
     },
     {
 
-      "code": "BLR",
+      "code": "Bengaluru (BLR)",
       "name": "Bengaluru"
 
     },
     {
-      "code": "PNQ",
+      "code": "Pune (PNQ)",
       "name": "Pune"
     }
 

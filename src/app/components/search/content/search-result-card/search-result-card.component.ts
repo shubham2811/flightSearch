@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-result-card.component.css']
 })
 export class SearchResultCardComponent implements OnInit {
+  showMultipleView:boolean=false
   flights;
   priceFilter: number;
   flag = false;
@@ -17,7 +18,12 @@ export class SearchResultCardComponent implements OnInit {
 
   ngOnInit() {
     // recieving emitted event for filtered flights
-    this.dataServ.search.subscribe(filteredFlights => this.flights = filteredFlights);
+    this.dataServ.search.subscribe(filteredFlights => {
+      this.flights = filteredFlights
+    
+    console.log('this.flights',this.flights);
+    
+    });
 
     // recieving emitted event for filtering flights as per provided range
     this.dataServ.priceFilterEvent.subscribe(val => this.priceFilter = val);
@@ -25,5 +31,9 @@ export class SearchResultCardComponent implements OnInit {
 
   showBookingDetails(data) {
     this.flag = true;
+  }
+
+  toggleMultipleView(value){
+this.showMultipleView = !value
   }
 }

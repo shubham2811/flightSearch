@@ -1,827 +1,749 @@
 [
   {
-    "flightNo": "EM-P-D-201",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "2500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "08:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "6:00",
+  "date": "2020-11-01",
+  "departureTime": "5:00",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-101",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 3525,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "07:00 AM",
-      "arrive": "10:30 PM",
-      "number": "EM-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/emirates.png"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "ML-P-D-202",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "5000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "06:00 AM",
-      "arrive": "11:30 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "9:50",
+  "date": "2020-11-01",
+  "departureTime": "7:20",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-102",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 5635,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "06:00 AM",
-      "arrive": "10:45 AM",
-      "number": "ML-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+      "depart": "09:20",
+      "arrive": "11:40",
+      "number": "AI-102"
+    }
   },
   {
-    "flightNo": "ML-P-D-2066",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "8700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:35 AM",
-      "arrive": "10:10 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "7:10",
+  "date": "2020-11-01",
+  "departureTime": "6:10",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-103",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 2537,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "06:00 AM",
-      "arrive": "10:45 AM",
-      "number": "ML-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-103"
+    }
   },
   {
-    "flightNo": "JT-P-D-203",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "7500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:45 AM",
-      "arrive": "11:10 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "10:20",
+  "date": "2020-11-01",
+  "departureTime": "8:10",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-104",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 4681,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "02:00 AM",
-      "arrive": "03:30 AM",
-      "number": "JT-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/jet.jpg"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-103"
+    }
   },
   {
-    "flightNo": "EM-P-D-201",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "2500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "08:00 AM",
-      "arrive": "10:30 AM"
+    "arrivalTime": "2:00",
+    "date": "2020-11-01",
+    "departureTime": "8:10",
+    "destination": "Delhi (DEL)",
+    "name": "Air India",
+    "origin": "Pune (PNQ)",
+    "price": 4681,
+    "imgUrl": "../assets/img/airlines/airIndia.png",
+    "layoverFlights":[
+      {
+       "flightNo":"AI-101",
+       "origin":"Pune (PNQ)",
+       "destination": "Mumbai (BOM)",
+       "imgUrl": "../assets/img/airlines/airIndia.png",
+       "departureTime": "8:10",
+       "arrivalTime": "9:00"
+      },
+      {
+        "flightNo":"AI-102",
+        "origin":"Mumbai (BOM)",
+        "destination": "Bengaluru (BLR)",
+        "imgUrl": "../assets/img/airlines/airIndia.png",
+        "departureTime": "9:00",
+        "arrivalTime": "10:30"
+       },
+       {
+        "flightNo":"SJ-105",
+        "origin":"Bengaluru (BLR)",
+        "destination": "Mumbai (BOM)",
+        "imgUrl": "../assets/img/airlines/spicejet.png",
+        "departureTime": "10:45",
+        "arrivalTime": "12:00"
+       },
+       {
+        "flightNo":"SJ-106",
+        "origin":"Mumbai (BOM)",
+        "destination": "Delhi (Del)",
+        "imgUrl": "../assets/img/airlines/spicejet.png",
+        "departureTime": "12:30",
+        "arrivalTime": "2:00"
+       }
+    ],
+    "round_trip_date": "2020-11-02",
+      "round_trip": {
+        "depart": "09:00",
+        "arrive": "10:00",
+        "number": "AI-103"
+      }
     },
-    "round_trip_date": "2019-07-25",
+  {
+  "arrivalTime": "9:15",
+  "date": "2020-11-01",
+  "departureTime": "8:15",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "SJ-105",
+  "name": "SpiceJet",
+  "origin": "Pune (PNQ)",
+  "price": 3549,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "07:00 AM",
-      "arrive": "10:30 PM",
-      "number": "EM-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/emirates.png"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "SJ-101"
+    }
   },
   {
-    "flightNo": "ML-P-D-202",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "5000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "06:00 AM",
-      "arrive": "11:30 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "13:00",
+  "date": "2020-11-01",
+  "departureTime": "11:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "SJ-106",
+  "name": "SpiceJet",
+  "origin": "Bengaluru (BLR)",
+  "price": 5645,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "06:00 AM",
-      "arrive": "10:45 AM",
-      "number": "ML-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "SJ-102"
+    }
   },
   {
-    "flightNo": "ML-P-D-2066",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "8700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:35 AM",
-      "arrive": "10:10 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "10:00",
+  "date": "2020-11-01",
+  "departureTime": "8:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "SJ-107",
+  "name": "SpiceJet",
+  "origin": "Bengaluru (BLR)",
+  "price": 5000,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "06:00 AM",
-      "arrive": "10:45 AM",
-      "number": "ML-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "SJ-101"
+    }
   },
   {
-    "flightNo": "JT-P-D-203",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "7500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:45 AM",
-      "arrive": "11:10 AM"
-    },
-    "round_trip_date": "2019-07-25",
+  "arrivalTime": "10:30",
+  "date": "2020-11-01",
+  "departureTime": "8:00",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "TW-108",
+  "name": "Air Taiwan",
+  "origin": "Mumbai (BOM)",
+  "price": 4004,
+  "imgUrl": "../assets/img/airlines/airTaiwan.png",
+  "round_trip_date": "2020-11-02",
     "round_trip": {
-      "depart": "02:00 AM",
-      "arrive": "03:30 AM",
-      "number": "JT-D-P-201"
-    },
-    "imgUrl": "../assets/img/airlines/jet.jpg"
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "TW-108"
+    }
   },
   {
-    "flightNo": "EM-P-D-204",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "8700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "06:00 PM",
-      "arrive": "09:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "15:30",
+  "date": "2020-11-01",
+  "departureTime": "12:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "TW-109",
+  "name": "Air Taiwan",
+  "origin": "Bengaluru (BLR)",
+  "price": 3495,
+  "imgUrl": "../assets/img/airlines/airTaiwan.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "TW-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-204",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "9500.00",
-    "date": "2019-07-26",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  "arrivalTime": "11:30",
+  "date": "2020-11-01",
+  "departureTime": "9:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-110",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 4137,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
-  {
-    "flightNo": "GO-P-D-205",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "6200.00",
-    "date": "2019-07-27",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
-  },
-  {
-    "flightNo": "ML-P-D-205",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "8200.00",
-    "date": "2019-07-26",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
-  },
-  {
-    "flightNo": "AI-P-D-206",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "3800.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
-  },
-  {
-    "flightNo": "AA-P-D-207",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "9000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "EM-P-D-208",
-    "source": "PNQ",
-    "source_name": "Pune",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "5700.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
 
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  {
+    "arrivalTime": "12:00",
+    "date": "2020-11-01",
+    "departureTime": "9:00",
+    "destination": "Delhi (DEL)",
+    "origin": "Mumbai (BOM)",
+    "imgUrl": "../assets/img/airlines/airTaiwan.png",
+    "price": 4137,
+    "layoverFlights":[
+     {
+      "flightNo":"TW-108",
+      "origin":"Mumbai (BOM)",
+      "destination": "Pune (PNQ)",
+      "imgUrl": "../assets/img/airlines/airTaiwan.png",
+      "departureTime": "09:00",
+      "arrivalTime": "10:00"
+     },
+     {
+      "flightNo":"TW-109",
+      "imgUrl": "../assets/img/airlines/airTaiwan.png",
+      "departureTime": "10:30",
+      "arrivalTime": "12:00",
+      "origin":"Pune (PNQ)",
+      "destination": "Delhi (DEL)"
+     }
+    ],
+    "round_trip_date": "2020-11-02",
+      "round_trip": {
+        "depart": "09:00",
+        "arrive": "10:00",
+        "number": "TW-101"
+      }
+    },
+  {
+  "arrivalTime": "16:30",
+  "date": "2020-11-01",
+  "departureTime": "14:00",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "AI-111",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 5217,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-111"
+    }
   },
   {
-    "flightNo": "EM-D-P-101",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "2400.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "01:30 AM",
-      "arrive": "05:40 AM"
-    },
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "16:30",
+  "date": "2020-11-01",
+  "departureTime": "14:30",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-112",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 4170,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-114"
+    }
   },
   {
-    "flightNo": "AI-D-P-102",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "4300.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "06:00 PM",
-      "arrive": "10:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  "arrivalTime": "22:30",
+  "date": "2020-11-01",
+  "departureTime": "20:00",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-113",
+  "name": "Air India",
+  "origin": "Bengaluru (BLR)",
+  "price": 5132,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "GO-D-P-103",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "9700.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "08:20 PM",
-      "arrive": "11:50 PM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  "arrivalTime": "22:45",
+  "date": "2020-11-01",
+  "departureTime": "21:30",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-114",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 2001,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-134"
+    }
   },
   {
-    "flightNo": "ML-D-P-104",
-    "source": "DEL",
-    "source_name": "Delhi",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "4900.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:34 AM",
-      "arrive": "09:37 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+  "arrivalTime": "22:10",
+  "date": "2020-11-01",
+  "departureTime": "20:00",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-115",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 5233,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-204",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "9500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  "arrivalTime": "19:30",
+  "date": "2020-11-01",
+  "departureTime": "17:20",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "AI-116",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 6348,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "GO-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "6200.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  "arrivalTime": "14:15",
+  "date": "2020-11-01",
+  "departureTime": "13:15",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-117",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 5117,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "ML-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "8200.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+  "arrivalTime": "6:00",
+  "date": "2020-11-02",
+  "departureTime": "5:00",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-119",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 3525,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AI-P-D-206",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "3800.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  "arrivalTime": "9:50",
+  "date": "2020-11-02",
+  "departureTime": "7:20",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-120",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 5635,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-207",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "9000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  "arrivalTime": "6:58",
+  "date": "2020-11-02",
+  "departureTime": "6:10",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-121",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 2537,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "EM-P-D-208",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "5700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "10:20",
+  "date": "2020-11-02",
+  "departureTime": "8:10",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-131",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 4681,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-204",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "9500.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
+    "arrivalTime": "10:20",
+    "date": "2020-11-02",
+    "departureTime": "8:10",
+    "destination": "Pune (PNQ)",
+    "name": "Air India",
+    "origin": "Delhi (DEL)",
+    "price": 3800,
+    "imgUrl": "../assets/img/airlines/airIndia.png",
+    "layoverFlights":[
+      {
+       "flightNo":"AI-119",
+       "origin":"Delhi (DEL)",
+       "destination": "Bengaluru (BLR)",
+       "imgUrl": "../assets/img/airlines/airIndia.png",
+       "departureTime": "08:10",
+       "arrivalTime": "10:30"
+      },
+      {
+        "flightNo":"AI-120",
+        "origin":"Bengaluru (BLR)",
+        "destination": "Mumbai (BOM)",
+        "imgUrl": "../assets/img/airlines/airIndia.png",
+        "departureTime": "08:20",
+        "arrivalTime": "10:30"
+       },
+       {
+        "flightNo":"SJ-115",
+        "origin":"Mumbai (BOM)",
+        "destination": "Delhi (DEL)",
+        "imgUrl": "../assets/img/airlines/spicejet.png",
+        "departureTime": "11:30",
+        "arrivalTime": "13:30"
+       },
+       {
+        "flightNo":"SJ-116",
+        "origin":"Delhi (DEL)",
+        "destination": "Pune (PNQ)",
+        "imgUrl": "../assets/img/airlines/spicejet.png",
+        "departureTime": "11:30",
+        "arrivalTime": "13:30"
+       }
+     ],
+    "round_trip_date": "2020-11-02",
+      "round_trip": {
+        "depart": "09:00",
+        "arrive": "10:00",
+        "number": "AI-101"
+      }
     },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  {
+  "arrivalTime": "9:15",
+  "date": "2020-11-02",
+  "departureTime": "8:15",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "SJ-115",
+  "name": "SpiceJet",
+  "origin": "Delhi (DEL)",
+  "price": 3549,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AJ-101"
+    }
   },
   {
-    "flightNo": "GO-P-D-205",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "6200.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  "arrivalTime": "13:00",
+  "date": "2020-11-02",
+  "departureTime": "11:00",
+  "destination": "Pune (PNQ)",
+  "flightNo": "SJ-116",
+  "name": "SpiceJet",
+  "origin": "Bengaluru (BLR)",
+  "price": 5645,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "SJ-117"
+    }
   },
   {
-    "flightNo": "ML-P-D-205",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "8200.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+  "arrivalTime": "10:00",
+  "date": "2020-11-02",
+  "departureTime": "8:00",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "SJ-117",
+  "name": "SpiceJet",
+  "origin": "Delhi (DEL)",
+  "price": 5000,
+  "imgUrl": "../assets/img/airlines/spicejet.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "SJ-111"
+    }
   },
   {
-    "flightNo": "AI-P-D-206",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "3800.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  "arrivalTime": "10:30",
+  "date": "2020-11-02",
+  "departureTime": "8:00",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "TW-118",
+  "name": "Air Taiwan",
+  "origin": "Delhi (DEL)",
+  "price": 4004,
+  "imgUrl": "../assets/img/airlines/airTaiwan.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "TW-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-207",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "9000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  "arrivalTime": "15:30",
+  "date": "2020-11-02",
+  "departureTime": "12:00",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "TW-119",
+  "name": "Air Taiwan",
+  "origin": "Bengaluru (BLR)",
+  "price": 3495,
+  "imgUrl": "../assets/img/airlines/airTaiwan.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "TW-101"
+    }
   },
   {
-    "flightNo": "EM-P-D-208",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "5700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "11:30",
+  "date": "2020-11-02",
+  "departureTime": "9:00",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-130",
+  "name": "Air India",
+  "origin": "Delhi (DEL)",
+  "price": 4137,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-204",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "9500.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
+    "arrivalTime": "11:30",
+    "date": "2020-11-02",
+    "departureTime": "9:00",
+    "destination": "Mumbai (BOM)",
+    "name": "Air India",
+    "origin": "Delhi (DEL)",
+    "price": 4137,
+    "layoverFlights":[
+      {
+       "flightNo":"TW-118",
+       "origin":"Delhi (DEL)",
+       "destination": "Pune (PNQ)",
+       "imgUrl": "../assets/img/airlines/airTaiwan.png",
+       "departureTime": "9:00",
+       "arrivalTime": "10:20"
+      },
+      {
+        "flightNo":"TW-119",
+        "origin":"Pune (PNQ)",
+        "destination": "Mumbai (BOM",
+        "imgUrl": "../assets/img/airlines/airTaiwan.png",
+        "departureTime": "10:30",
+        "arrivalTime": "11:30"
+       }
+   
+    ],
+    "imgUrl": "../assets/img/airlines/airIndia.png",
+    "round_trip_date": "2020-11-02",
+      "round_trip": {
+        "depart": "09:00",
+        "arrive": "10:00",
+        "number": "AI-101"
+      }
     },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  {
+  "arrivalTime": "16:30",
+  "date": "2020-11-02",
+  "departureTime": "14:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-131",
+  "name": "Air India",
+  "origin": "Bengaluru (BLR)",
+  "price": 5217,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "GO-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "6200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
+  "arrivalTime": "16:30",
+  "date": "2020-11-02",
+  "departureTime": "14:30",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-132",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 4170,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-132"
+    }
   },
   {
-    "flightNo": "ML-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "8200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
+  "arrivalTime": "22:30",
+  "date": "2020-11-02",
+  "departureTime": "20:00",
+  "destination": "Bengaluru (BLR)",
+  "flightNo": "AI-133",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 5132,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-133"
+    }
   },
   {
-    "flightNo": "AI-P-D-206",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "3800.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
+  "arrivalTime": "22:45",
+  "date": "2020-11-02",
+  "departureTime": "21:30",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-134",
+  "name": "Air India",
+  "origin": "Mumbai (BOM)",
+  "price": 2001,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-207",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "9000.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
+  "arrivalTime": "22:10",
+  "date": "2020-11-02",
+  "departureTime": "20:00",
+  "destination": "Delhi (DEL)",
+  "flightNo": "AI-135",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 5233,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "EM-P-D-208",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "HYD",
-    "dest_name": "Hyderabad",
-    "fare": "5700.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "19:30",
+  "date": "2020-11-02",
+  "departureTime": "17:20",
+  "destination": "Pune (PNQ)",
+  "flightNo": "AI-136",
+  "name": "Air India",
+  "origin": "Bengaluru (BLR)",
+  "price": 6348,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   },
   {
-    "flightNo": "AA-P-D-204",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "9500.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "GO-P-D-205",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "6200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
-  },
-  {
-    "flightNo": "ML-P-D-205",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "8200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
-  },
-  {
-    "flightNo": "AI-P-D-206",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "3800.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
-  },
-  {
-    "flightNo": "AA-P-D-207",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "9000.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "EM-P-D-208",
-    "source": "HYD",
-    "source_name": "Hyderabad",
-    "dest": "BOM",
-    "dest_name": "Mumbai",
-    "fare": "5700.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
-  },
-  {
-    "flightNo": "AA-P-D-204",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "9500.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "GO-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "6200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
-  },
-  {
-    "flightNo": "ML-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "8200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
-  },
-  {
-    "flightNo": "AI-P-D-206",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "3800.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
-  },
-  {
-    "flightNo": "AA-P-D-207",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "9000.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "EM-P-D-208",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "PNQ",
-    "dest_name": "Pune",
-    "fare": "5700.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
-  },
-  {
-    "flightNo": "AA-P-D-204",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "9500.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "11:30 PM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "GO-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "6200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "07:00 PM",
-      "arrive": "10:56 AM"
-    },
-    "imgUrl": "../assets/img/airlines/go-air.jpg"
-  },
-  {
-    "flightNo": "ML-P-D-205",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "8200.00",
-    "date": "2019-07-25",
-    "time": {
-      "depart": "09:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/malaysia.png"
-  },
-  {
-    "flightNo": "AI-P-D-206",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "3800.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "01:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-india.jpg"
-  },
-  {
-    "flightNo": "AA-P-D-207",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "9000.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "02:00 AM",
-      "arrive": "10:30 AM"
-    },
-    "imgUrl": "../assets/img/airlines/air-asia.jpg"
-  },
-  {
-    "flightNo": "EM-P-D-208",
-    "source": "BOM",
-    "source_name": "Mumbai",
-    "dest": "DEL",
-    "dest_name": "Delhi",
-    "fare": "5700.00",
-    "date": "2019-07-24",
-    "time": {
-      "depart": "04:00 AM",
-      "arrive": "12:30 AM"
-    },
-
-    "imgUrl": "../assets/img/airlines/emirates.png"
+  "arrivalTime": "14:15",
+  "date": "2020-11-02",
+  "departureTime": "13:15",
+  "destination": "Mumbai (BOM)",
+  "flightNo": "AI-137",
+  "name": "Air India",
+  "origin": "Pune (PNQ)",
+  "price": 5117,
+  "imgUrl": "../assets/img/airlines/airIndia.png",
+  "round_trip_date": "2020-11-02",
+    "round_trip": {
+      "depart": "09:00",
+      "arrive": "10:00",
+      "number": "AI-101"
+    }
   }
-]
+  ]

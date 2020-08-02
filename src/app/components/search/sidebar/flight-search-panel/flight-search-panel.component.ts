@@ -24,11 +24,13 @@ export class FlightSearchPanelComponent {
   searchFlight(formVal) {
     // service call for flight search for given search parameters
     const obj = {
-      dest: "DEL",
-origin: "PNQ",
+      destination  : "Mumbai (BOM)",
+      origin : "Delhi (DEL)",
 passengers: 1,
-startDate: "2019-07-24"
+startDate: "2020-11-02",
+returnDate: "2020-11-02"
     }
+
     console.log('formVal',formVal)
     this.dataServ.flightSearch(obj);
   }
