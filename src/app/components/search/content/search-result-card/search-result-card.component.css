@@ -53,23 +53,21 @@ img {
 }
 
 .journey {
-  background: #00b9f5;
-  line-height: 2.6em;
+  background: #b7243a;
+  line-height: 1.6em;
 }
 
 .journey-detail>span {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 700;
   margin-bottom: 0.5em;
   letter-spacing: 2px;
-  color: #000;
+  color: #ffff
 }
 
 .journey-dates {
-  float: right;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  color: #000;
+  color: #ffff;
+  font-size: 12px;
 }
 
 .no-card-content {

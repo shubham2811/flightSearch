@@ -9,8 +9,10 @@
           <span>{{ flights[0].source }}>{{ flights[0].dest }}</span>
           <span *ngIf="flights.twoWaySearch">>{{ flights[0].source }}</span>
         </span>
+        <br />
         <span class="journey-dates">
-          <span>Journey Date : {{ flights[0].date }}</span>
+          <span>{{flights.length}} flights found </span>,
+          <span>{{ flights[0].date }}</span>
           <br />
           <span *ngIf="flights.twoWaySearch"
             >Return Date : {{ flights[0].round_trip_date }}
@@ -40,6 +42,10 @@
         *ngFor="let flight of flights | filterByPrice: priceFilter"
       >
         <div class="side-by-side details-wrapper fadeIn">
+          <div class="side-by-side image-wrapper fadeIn">
+            <img [src]="flight.imgUrl" />
+            
+          </div>
           <h3 class="fl-fare">Rs.{{ flight.fare }}</h3>
           <div class="side-by-side to-flight">
             <span class="fl-name">{{ flight.flightNo }}</span>
@@ -66,8 +72,7 @@
           </div>
         </div>
         <div class="side-by-side image-wrapper fadeIn">
-          <img [src]="flight.imgUrl" />
-          <button class=" btn-primary std" (click)="showBookingDetails(flight)">
+          <button class=" btn-primary std">
             Book Now
           </button>
         </div>

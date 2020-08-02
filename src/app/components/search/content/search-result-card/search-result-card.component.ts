@@ -25,6 +25,5 @@ export class SearchResultCardComponent implements OnInit {
 
   showBookingDetails(data) {
     this.flag = true;
-    this.dataServ.getBookingDetails(this.flag, data);
   }
 }

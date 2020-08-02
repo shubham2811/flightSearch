@@ -1,0 +1,58 @@
+<div class="tabs-container fadeIn">
+  <nav class="tab-btn-wrapper">
+    <button for="tab1" class="std tab-btn" [ngClass]="{'active':!searchBoxFlag}" (click)="toggleButton(searchBoxFlag);">OneWay</button>
+    <button for="tab2" class="std tab-btn" [ngClass]="{'active':searchBoxFlag}" (click)="toggleButton(searchBoxFlag);">Round Trip</button>
+  </nav>
+  <div class="tabs-wrapper">
+    <form #form="ngForm" (ngSubmit)="searchFlight(form.value)" novalidate>
+      <div class="tab" id="tab1">
+        <div class="f-ctrl side-by-side">
+          <input placeholder="Depart From" name="origin" [(ngModel)]="model.origin" #origin="ngModel" type="text" class="jr-src" list="citylist"
+            required/>
+          <div class="err-text" *ngIf="origin.errors?.required && origin.touched">
+           Please provide origin
+          </div>
+        </div>
+        <div class="f-ctrl side-by-side">
+          <input placeholder="Going To" name="dest" type="text" [(ngModel)]="model.dest" #dest="ngModel" class="jr-dest" list="citylist"
+            required/>
+          <div class="err-text" *ngIf="dest.errors?.required && dest.touched">
+           Please provide Destination
+          </div>
+        </div>
+
+        <div class="f-ctrl side-by-side">
+          <input type="date" name="startDate" id="oJrDate" [(ngModel)]="model.startDate" #startDate="ngModel" required 
+          />
+          <div class="err-text" *ngIf="startDate.errors?.required && startDate.touched">
+            Please Enter Start Date
+          </div>
+        </div>
+        <div class="f-ctrl side-by-side" *ngIf="searchBoxFlag">
+          <input type="date" name="returnDate" [(ngModel)]="model.returnDate" #returnDate="ngModel" required >
+
+          <div class="err-text" *ngIf="returnDate.errors?.required && returnDate.touched">
+            Please enter Return Date
+          </div>
+
+        </div>
+
+        <div class="f-ctrl side-by-side">
+          <input type="number" name="passengers" [(ngModel)]="model.passengers" #passengers="ngModel"  min="1" placeholder="No of passengers"
+            required/>
+          <div class="err-text" *ngIf="passengers.errors?.required && passengers.touched">
+            No. of Passenger is mandatory
+          </div>
+        </div>
+        <datalist id="citylist" *ngIf="cities">
+          <option *ngFor="let city of cities" [value]="city.code">{{city.name}}</option>
+          <!-- <option value="DEL">Delhi</option> -->
+        </datalist>
+        <br class="mobile">
+        <!-- [disabled]="form.invalid" -->
+        <button type="submit"  [ngStyle]="{'cursor':form.invalid ? 'no-drop' : 'default' }" class="btn-primary std"
+          id="tSearchBtn">Search</button>
+      </div>
+    </form>
+  </div>
+</div>

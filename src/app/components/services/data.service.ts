@@ -1,5 +1,5 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 // importing xyz-Env constants for URL endpoints via env specific constants
 import { endPoints } from './env-endpoints';
@@ -18,8 +18,6 @@ export class DataService {
   @Output() search: EventEmitter<any> = new EventEmitter();
   @Output() priceFilterEvent: EventEmitter<any> = new EventEmitter();
   @Output() bookingDetails: EventEmitter<any> = new EventEmitter();
-
-
 
   getAllFlights(formVal) {
 

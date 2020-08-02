@@ -33,13 +33,15 @@
   margin-bottom: 0.3125em;
   width: 100%;
   padding: 0.5125em;
+  border-radius: 6px;
+    border-color: #012b72;
 }
 
 .tab .f-ctrl {
   margin-bottom: 0.625em;
 }
 
-.help-block {
+.err-text {
   font-size: 13px;
   color: red;
   margin-bottom: 4px;

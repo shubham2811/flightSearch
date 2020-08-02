@@ -1,34 +1,40 @@
-import { DataService } from './../../../services/data.service';
+import { DataService } from '../../../services/data.service';
 import { Component, ViewChild } from '@angular/core';
 import { Cities } from '../../../../models/cities';
 @Component({
-  selector: 'app-flight-search-box',
-  templateUrl: './flight-search-box.component.html',
-  styleUrls: ['./flight-search-box.component.css'],
+  selector: 'app-flight-search-panel',
+  templateUrl: './flight-search-panel.component.html',
+  styleUrls: ['./flight-search-panel.component.css'],
 })
-export class FlightSearchBoxComponent {
+export class FlightSearchPanelComponent {
   // view child to get hold of form for resetting it on tab change
   @ViewChild('form') form: any;
-
-  public model: any = {};
-  searBoxTab = false;
+ model: any = {};
+ searchBoxFlag = false;
   cities: object;
 
   constructor(private dataServ: DataService) {
     // service call to get all cities
     this.dataServ.getCities().subscribe((data: Cities) => {
-      // debugger;
+
       this.cities = data.cities;
     });
   }
 
-  flightSearch(formVal) {
+  searchFlight(formVal) {
     // service call for flight search for given search parameters
-    this.dataServ.flightSearch(formVal);
+    const obj = {
+      dest: "DEL",
+origin: "PNQ",
+passengers: 1,
+startDate: "2019-07-24"
+    }
+    console.log('formVal',formVal)
+    this.dataServ.flightSearch(obj);
   }
 
   toggleButton(value) {
     this.form.reset();
-    this.searBoxTab = !value;
+    this.searchBoxFlag = !value;
   }
 }
