@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search.component';
 import { DataService } from './../services/data.service';
-import { SearchResultCardComponent } from './search-result-card/search-result-card.component';
+import { FlightResultCardComponent } from './flight-result-card/flight-result-card.component';
 import { FlightSearchByPriceComponent } from './sidebar/flight-search-by-price/flight-search-by-price.component';
 import { FlightSearchPanelComponent } from './sidebar/flight-search-panel/flight-search-panel.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,7 +25,7 @@ import { Ng5SliderModule } from 'ng5-slider';
         HeaderComponent,
         FlightSearchPanelComponent,
         FlightSearchByPriceComponent,
-        SearchResultCardComponent,
+        FlightResultCardComponent,
         PriceFilter
     ],
     providers: [DataService]
