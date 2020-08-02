@@ -13,15 +13,14 @@ export class FlightSearchPanelComponent {
   searchBoxFlag = false;
   cities: object;
 
-  constructor(private dataServ: DataService) {
+  constructor(private _dataService: DataService) {
     // service call to get all cities
-    this.dataServ.getCities().subscribe((data: Cities) => {
+    this._dataService.getCities().subscribe((data: Cities) => {
       this.cities = data.cities;
     });
   }
 
-  searchFlight(formVal) {
-    // service call for flight search for given search parameters
+  searchFlight(values) {
     const obj = {
       destination: 'Mumbai (BOM)',
       origin: 'Delhi (DEL)',
@@ -30,8 +29,8 @@ export class FlightSearchPanelComponent {
       returnDate: '2020-11-02',
     };
 
-    console.log('formVal', formVal);
-    this.dataServ.flightSearch(obj);
+    console.log('values', values);
+    this._dataService.flightSearch(obj);
   }
 
   toggleButton(value) {

@@ -1,4 +1,4 @@
-import { FilterByPricePipe } from './../../pipes/filter-by-price.pipe';
+import { PriceFilter } from '../../pipes/priceFilter.pipe';
 import { PreviousDateDirective } from './../../directives/previous-date.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -28,7 +28,7 @@ import { Ng5SliderModule } from 'ng5-slider';
         FlightSearchByPriceComponent,
         SearchResultCardComponent,
         PreviousDateDirective,
-        FilterByPricePipe
+        PriceFilter
     ],
     providers: [DataService]
 })

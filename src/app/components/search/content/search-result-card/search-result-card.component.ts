@@ -18,12 +18,7 @@ export class SearchResultCardComponent implements OnInit {
 
   ngOnInit() {
     // recieving emitted event for filtered flights
-    this.dataServ.search.subscribe(filteredFlights => {
-      this.flights = filteredFlights
-    
-    console.log('this.flights',this.flights);
-    
-    });
+    this.dataServ.search.subscribe(filteredFlights =>  this.flights = filteredFlights);
 
     // recieving emitted event for filtering flights as per provided range
     this.dataServ.priceFilterEvent.subscribe(val => this.priceFilter = val);

@@ -7,8 +7,6 @@ import { Options, LabelType } from 'ng5-slider';
   styleUrls: ['./flight-search-by-price.component.css']
 })
 export class FlightSearchByPriceComponent {
-  // minPrice = 1000;
-  // maxPrice = 12000;
   minValue: number = 1000;
   maxValue: number = 12000;
   options: Options = {
@@ -28,9 +26,4 @@ export class FlightSearchByPriceComponent {
     }
   };
   constructor(private dataServ: DataService) { }
-  // filterByPrice(value: number) {
-  //   // call to service to pass range value for filtering search results by that price
-  //   this.dataServ.filterByPrice(value);
-  // }
-
 }

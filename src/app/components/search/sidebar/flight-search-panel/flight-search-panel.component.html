@@ -46,10 +46,8 @@
         </div>
         <datalist id="citylist" *ngIf="cities">
           <option *ngFor="let city of cities" [value]="city.code">{{city.code}}</option>
-          <!-- <option value="DEL">Delhi</option> -->
         </datalist>
         <br class="mobile">
-        <!-- [disabled]="form.invalid" -->
         <button type="submit"  [ngStyle]="{'cursor':form.invalid ? 'no-drop' : 'default' }" class="btn-primary std"
           id="tSearchBtn">Search</button>
       </div>

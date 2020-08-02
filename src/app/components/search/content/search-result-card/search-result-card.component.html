@@ -11,8 +11,8 @@
         </span>
         <br />
         <span class="journey-dates">
-          <span>{{ flights.length }} flights found </span>,
-          <span>{{ flights[0].date }}</span>
+          <!-- <span>{{ flights.length }} flights found </span>, -->
+          <span>Starting Date:{{ flights[0].date }}</span>
           <br />
           <span *ngIf="flights.twoWaySearch"
             >Return Date : {{ flights[0].round_trip_date }}

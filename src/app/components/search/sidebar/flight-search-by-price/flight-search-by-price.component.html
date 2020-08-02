@@ -2,18 +2,7 @@
   <div for="priceRange" id="filter-by-price">Filter By Price</div>
   <div class="priceRange">
     <div id="price-lable">
-      <!-- <span class="minPrice">
-        {{minPrice}}
-      </span>
-      <span class="maxPrice">
-        {{maxPrice}}
-      </span>
-    </div>
-    <input type="range" class="slider" [min]="minPrice" [max]="maxPrice" #price (change)="filterByPrice(price.value)" [value]="maxPrice" -->
-   <!-- /> --> 
     <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
-    <!-- <div for="priceRange" class="price-label">Price: {{price.value}}</div> -->
-
   </div>
 
 </div>
