@@ -12,7 +12,9 @@ export class FlightSearchPanelComponent {
   model: any = {};
   searchBoxFlag = false;
   cities: object;
-
+  todayDate = new Date();
+  maxStartDate;
+  minEndDate = new Date();
   constructor(private _dataService: DataService) {
     // service call to get all cities
     this._dataService.getCities().subscribe((data: Cities) => {
@@ -28,11 +30,16 @@ export class FlightSearchPanelComponent {
       startDate: '2020-11-02',
       returnDate: '2020-11-02',
     };
-
-    console.log('values', values);
-    this._dataService.flightSearch(obj);
+    this._dataService.flightSearch(values);
+  }
+  startDateChange(startDate) {
+    console.log(startDate);
+    this.minEndDate = new Date(startDate);
   }
 
+  startReturnChange(returnDate) {
+    this.maxStartDate = new Date(returnDate);
+  }
   toggleButton(value) {
     this.form.reset();
     this.searchBoxFlag = !value;
